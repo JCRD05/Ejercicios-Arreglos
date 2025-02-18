@@ -204,6 +204,6 @@ class Program
                 case 7: Ejercicio7(); break;
                 default: Console.WriteLine("Elija un ejercicio entre 1 y 7"); break;
             }
-        } while (Exit() && (opt >= 1 && opt <= 7)); // Permite repetir hasta que el usuario elija salir
+        } while (Exit() || (opt >= 1 && opt <= 7)); // Permite repetir hasta que el usuario elija salir
     }
 }
